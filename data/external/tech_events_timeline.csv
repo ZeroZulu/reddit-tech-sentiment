@@ -1,0 +1,20 @@
+date,event,company,category,impact
+2024-06-10,Apple WWDC 2024 — Apple Intelligence announced,Apple,product_launch,high
+2024-06-18,NVIDIA becomes most valuable company globally,NVIDIA,milestone,high
+2024-07-18,CrowdStrike outage crashes millions of Windows PCs,Microsoft,incident,high
+2024-08-05,Google found guilty of monopoly in DOJ antitrust case,Google,legal,high
+2024-09-09,Apple iPhone 16 launch event,Apple,product_launch,medium
+2024-09-12,OpenAI releases o1 reasoning model,OpenAI,product_launch,high
+2024-09-24,Meta Connect 2024 — Quest 3S and Orion AR glasses,Meta,product_launch,medium
+2024-10-01,Google Gemini app launches across 40 languages,Google,product_launch,medium
+2024-10-28,Microsoft reports Q1 FY25 earnings — cloud growth 33%,Microsoft,earnings,medium
+2024-11-05,US Presidential Election Day,N/A,political,high
+2024-11-20,NVIDIA Q3 earnings — $35B revenue beats estimates,NVIDIA,earnings,high
+2024-12-05,OpenAI launches 12 Days of Shipmas — o3 announced,OpenAI,product_launch,high
+2024-12-11,Google launches Gemini 2.0,Google,product_launch,high
+2025-01-07,CES 2025 — NVIDIA Jensen Huang keynote,NVIDIA,event,medium
+2025-01-20,TikTok briefly banned then restored in US,Meta,political,high
+2025-01-23,Stargate AI infrastructure project announced ($500B),OpenAI,investment,high
+2025-01-27,DeepSeek R1 release shocks markets,OpenAI,competitor,high
+2025-02-04,Meta Q4 earnings — $164B annual revenue,Meta,earnings,medium
+2025-02-12,Amazon reports record Q4 — AWS growth accelerates,Amazon,earnings,medium

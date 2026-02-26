@@ -1,0 +1,93 @@
+# Reddit Tech Sentiment Tracker — Configuration
+# ================================================
+
+reddit:
+  subreddits:
+    - MachineLearn
+    - datascience
+    - computerscience
+    - artificial
+    - analytics
+    - dataengineering
+  post_limit: 1000
+  sort_methods:
+    - hot
+    - new
+    - top
+  time_filters:
+    - month
+    - year
+  fields:
+    - id
+    - subreddit
+    - title
+    - selftext
+    - score
+    - num_comments
+    - created_utc
+    - upvote_ratio
+    - author
+
+database:
+  path: "data/raw/reddit_posts.db"
+  table_name: "posts"
+
+preprocessing:
+  min_text_length: 10
+  max_text_length: 10000
+  custom_stopwords:
+    - edit
+    - update
+    - tldr
+    - deleted
+    - removed
+    - bot
+    - automoderator
+  spacy_model: "en_core_web_sm"
+
+sentiment:
+  vader_threshold:
+    positive: 0.05
+    negative: -0.05
+  transformer_model: "distilbert-base-uncased-finetuned-sst-2-english"
+  batch_size: 32
+
+topic_modeling:
+  lda:
+    topic_counts: [5, 10, 15, 20]
+    passes: 15
+    random_state: 42
+
+companies:
+  tracking:
+    - name: Apple
+      ticker: AAPL
+      keywords: ["apple", "iphone", "macbook", "ios", "siri", "tim cook"]
+    - name: Google
+      ticker: GOOGL
+      keywords: ["google", "alphabet", "android", "chrome", "gemini", "deepmind"]
+    - name: Microsoft
+      ticker: MSFT
+      keywords: ["microsoft", "windows", "azure", "copilot", "satya nadella"]
+    - name: Meta
+      ticker: META
+      keywords: ["meta", "facebook", "instagram", "whatsapp", "zuckerberg", "threads"]
+    - name: Amazon
+      ticker: AMZN
+      keywords: ["amazon", "aws", "alexa", "bezos", "jassy"]
+    - name: NVIDIA
+      ticker: NVDA
+      keywords: ["nvidia", "gpu", "cuda", "jensen huang"]
+    - name: OpenAI
+      ticker: null
+      keywords: ["openai", "chatgpt", "gpt-4", "gpt-5", "sam altman", "dall-e"]
+
+visualization:
+  color_palette:
+    positive: "#2ecc71"
+    negative: "#e74c3c"
+    neutral: "#95a5a6"
+    primary: "#3498db"
+    secondary: "#9b59b6"
+  figure_dpi: 150
+  figure_format: "png"

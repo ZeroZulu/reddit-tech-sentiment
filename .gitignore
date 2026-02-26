@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+.env
+.env.local
+data/raw/*.db
+data/raw/*.sqlite
+outputs/models/*.pkl
+outputs/models/*.bin
+*.log
+data/raw/*.csv
+
+# Large files (use Git LFS for .parquet)
+# data/processed/posts_final.parquet  ← tracked via Git LFS, not ignored

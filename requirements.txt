@@ -1,0 +1,11 @@
+# SentimentPulse Dashboard — Dependencies
+# =========================================
+# Trimmed to only what streamlit_app.py imports.
+# For full pipeline (notebooks), see requirements-dev.txt
+
+streamlit>=1.31.0
+pandas>=2.2.0
+numpy>=1.26.0
+plotly>=5.18.0
+pyarrow>=15.0.0
+matplotlib>=3.8.0
