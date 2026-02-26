@@ -11,7 +11,7 @@
 
 <div align="center">
 
-### **[→ LAUNCH LIVE DASHBOARD ←](https://YOUR-STREAMLIT-URL.streamlit.app)**
+### **[→ LAUNCH LIVE DASHBOARD ←](https://reddit-tech-sentiment-vm3mwdf2qp5bnqnfrdeqch.streamlit.app)**
 
 *294K posts · 6 subreddits · Real NLP analysis*
 
