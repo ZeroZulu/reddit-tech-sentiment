@@ -172,7 +172,7 @@ NLP (sentiment + topic modeling) · Data Engineering (API → DB → ETL) · Mac
 
 ## 👤 Author
 
-**Shril Patel** — [GitHub](https://github.com/ZeroZulu) · [LinkedIn](https://linkedin.com/in/shrilpatel)
+**Shril Patel** — [GitHub](https://github.com/ZeroZulu) · [LinkedIn](https://linkedin.com/in/shril-patel-020504284)
 
 ---
 
