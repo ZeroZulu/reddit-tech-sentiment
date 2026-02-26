@@ -273,10 +273,10 @@ with st.sidebar:
                     padding:14px 16px; font-size:0.82rem; line-height:1.65;">
             <span style="color:{TXT}; font-weight:600;">Shril Patel</span><br>
             <span style="color:{TXT2};">NLP · Sentiment Analysis · Topic Modeling</span><br>
-            <a href="https://github.com/shrilpatel" style="color:{ACCENT}; text-decoration:none;">
+            <a href="https://github.com/ZeroZulu" style="color:{ACCENT}; text-decoration:none;">
                 GitHub ↗</a>
             <span style="color:{TXT3};"> · </span>
-            <a href="https://linkedin.com/in/shrilpatel" style="color:{ACCENT}; text-decoration:none;">
+            <a href="https://linkedin.com/in/shril-patel-020504284" style="color:{ACCENT}; text-decoration:none;">
                 LinkedIn ↗</a>
         </div>
     """, unsafe_allow_html=True)
@@ -375,8 +375,8 @@ with tab1:
             textfont=dict(size=10, family="JetBrains Mono", color="#000"),
             hovertemplate="%{y}: %{x:,}<extra></extra>",
         ))
-        fig.update_layout(**PLOTLY, height=370, showlegend=False,
-                          yaxis=dict(gridcolor="rgba(0,0,0,0)"),
+        fig.update_layout(**PLOTLY, height=370, showlegend=False)
+        fig.update_layout(yaxis=dict(gridcolor="rgba(0,0,0,0)"),
                           xaxis=dict(visible=False))
         st.plotly_chart(fig, use_container_width=True)
 
@@ -468,8 +468,8 @@ with tab3:
             textposition="inside",
             textfont=dict(size=10, family="JetBrains Mono", color="#000"),
         ))
-        fig.update_layout(**PLOTLY, height=max(420, len(tc) * 34),
-                          yaxis=dict(autorange="reversed", gridcolor="rgba(0,0,0,0)"),
+        fig.update_layout(**PLOTLY, height=max(420, len(tc) * 34))
+        fig.update_layout(yaxis=dict(autorange="reversed", gridcolor="rgba(0,0,0,0)"),
                           xaxis=dict(visible=False))
         st.plotly_chart(fig, use_container_width=True)
 
@@ -497,8 +497,8 @@ with tab3:
         fig.add_vline(x=overall_avg, line_dash="dash", line_color=ACCENT, line_width=1,
                       annotation_text=f"overall avg {overall_avg:+.3f}",
                       annotation_font_size=10, annotation_font_color=TXT2)
-        fig.update_layout(**PLOTLY, height=max(400, len(ts) * 32),
-                          xaxis=dict(title="Avg VADER Compound"),
+        fig.update_layout(**PLOTLY, height=max(400, len(ts) * 32))
+        fig.update_layout(xaxis=dict(title="Avg VADER Compound"),
                           yaxis=dict(gridcolor="rgba(0,0,0,0)"))
         st.plotly_chart(fig, use_container_width=True)
 
@@ -631,6 +631,6 @@ st.markdown(f"""
     <div class="foot">
         SentimentPulse · {len(df):,} posts analyzed ·
         VADER + DistilBERT + LDA · Streamlit & Plotly ·
-        <a href="https://github.com/shrilpatel">Shril Patel</a>
+        <a href="https://github.com/ZeroZulu">Shril Patel</a>
     </div>
 """, unsafe_allow_html=True)
